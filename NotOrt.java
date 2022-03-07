@@ -7,7 +7,7 @@ public class NotOrt {
         double sonuc;
 
         Scanner sc=new Scanner(System.in);
-        System.out.print("Fizik notunu gir:");
+        System.out.print("Matematik notunu gir:");
         a=sc.nextInt();
 
         System.out.print("Fizik notunu gir:");
@@ -26,7 +26,9 @@ public class NotOrt {
         f=sc.nextInt();
 
         sonuc=(a+b+c+d+e+f)/6;
-        System.out.println("Ortalama:"+sonuc);
+
+        String durum = (sonuc<55) ?  "Kaldı" : "Geçti";
+        System.out.println("Ortalama:"+sonuc+" ** "+durum);
 
 
     }
